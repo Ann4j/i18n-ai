@@ -22,8 +22,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_GITHUB/i18n-ai.git"
+    "url": "https://github.com/Ann4j/i18n-ai.git"
   },
+  "author": "Anna Cernyseva <anna.che.sergeevna@gmail.com>",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "openai": "^4.0.0",
     "zod": "^3.22.4"
