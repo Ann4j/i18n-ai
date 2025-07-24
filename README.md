@@ -1,8 +1,8 @@
-# i18n-ai
+# i18n-ai-lite
 
 AI-powered i18n toolkit for TypeScript/Node.js/React projects. CLI for auto-extracting and translating keys via OpenAI.
 
-[![npm version](https://img.shields.io/npm/v/i18n-ai.svg)](https://www.npmjs.com/package/i18n-ai)
+[![npm version](https://img.shields.io/npm/v/i18n-ai-lite.svg)](https://www.npmjs.com/package/i18n-ai-lite)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 ## Features
@@ -16,16 +16,16 @@ AI-powered i18n toolkit for TypeScript/Node.js/React projects. CLI for auto-extr
 ## Installation
 
 ```bash
-npm install i18n-ai
+npm install i18n-ai-lite
 # or
-pnpm add i18n-ai
+pnpm add i18n-ai-lite
 ```
 
 ## Quick Start
 
 ### Usage in Code
 ```ts
-import { useTranslation } from 'i18n-ai'
+import { useTranslation } from 'i18n-ai-lite'
 
 const t = useTranslation('en')
 console.log(t`Hello, ${userName}!`)
@@ -33,7 +33,7 @@ console.log(t`Hello, ${userName}!`)
 
 ### Usage on Client (Dynamic Import)
 ```ts
-import { UseTranslation } from 'i18n-ai/client'
+import { UseTranslation } from 'i18n-ai-lite/client'
 
 const t = await UseTranslation('ru')
 console.log(t`Привет, ${userName}!`)
@@ -42,7 +42,7 @@ console.log(t`Привет, ${userName}!`)
 ### CLI for Auto Extraction and Translation
 
 ```bash
-npx i18n-ai --dir=./src --from=en --to=ru
+npx i18n-ai-lite --dir=./src --from=en --to=ru
 ```
 - `--dir` — directory to search for keys (default: ./src)
 - `--from` — base language (default: en)
@@ -78,7 +78,7 @@ export default {
 
 - **OpenAI API key for CLI**: to use auto-translation via CLI, you need an OpenAI key. Pass it as an environment variable:
   ```bash
-  OPENAI_API_KEY=sk-... npx i18n-ai --dir=./src --from=en --to=ru
+  OPENAI_API_KEY=sk-... npx i18n-ai-lite --dir=./src --from=en --to=ru
   ```
 
 - **Example of a resulting dictionary**:
@@ -111,11 +111,11 @@ MIT
 
 ---
 
-# i18n-ai (на русском)
+# i18n-ai-lite (на русском)
 
 AI-инструмент для i18n в проектах на TypeScript/Node.js/React. CLI для автосбора и перевода ключей через OpenAI.
 
-[![npm version](https://img.shields.io/npm/v/i18n-ai.svg)](https://www.npmjs.com/package/i18n-ai)
+[![npm version](https://img.shields.io/npm/v/i18n-ai-lite.svg)](https://www.npmjs.com/package/i18n-ai-lite)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 ## Возможности
@@ -129,16 +129,16 @@ AI-инструмент для i18n в проектах на TypeScript/Node.js/
 ## Установка
 
 ```bash
-npm install i18n-ai
+npm install i18n-ai-lite
 # или
-pnpm add i18n-ai
+pnpm add i18n-ai-lite
 ```
 
 ## Быстрый старт
 
 ### Использование в коде
 ```ts
-import { useTranslation } from 'i18n-ai'
+import { useTranslation } from 'i18n-ai-lite'
 
 const t = useTranslation('en')
 console.log(t`Hello, ${userName}!`)
@@ -146,7 +146,7 @@ console.log(t`Hello, ${userName}!`)
 
 ### Использование на клиенте (динамический импорт)
 ```ts
-import { UseTranslation } from 'i18n-ai/client'
+import { UseTranslation } from 'i18n-ai-lite/client'
 
 const t = await UseTranslation('ru')
 console.log(t`Привет, ${userName}!`)
@@ -155,7 +155,7 @@ console.log(t`Привет, ${userName}!`)
 ### CLI для автосбора и автоперевода
 
 ```bash
-npx i18n-ai --dir=./src --from=en --to=ru
+npx i18n-ai-lite --dir=./src --from=en --to=ru
 ```
 - `--dir` — директория для поиска ключей (по умолчанию ./src)
 - `--from` — базовый язык (по умолчанию en)
@@ -191,7 +191,7 @@ export default {
 
 - **OpenAI API-ключ для CLI**: для работы автоперевода через CLI необходим ключ OpenAI. Передайте его через переменную окружения:
   ```bash
-  OPENAI_API_KEY=sk-... npx i18n-ai --dir=./src --from=en --to=ru
+  OPENAI_API_KEY=sk-... npx i18n-ai-lite --dir=./src --from=en --to=ru
   ```
 
 - **Пример итогового словаря**:

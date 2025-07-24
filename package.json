@@ -1,5 +1,5 @@
 {
-  "name": "i18n-ai",
+  "name": "i18n-ai-lite",
   "version": "1.0.0",
   "description": "AI-powered i18n toolkit for TypeScript/Node.js/React projects. CLI for auto-extracting and translating keys via OpenAI.",
   "type": "module",
