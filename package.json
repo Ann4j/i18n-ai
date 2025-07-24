@@ -1,0 +1,36 @@
+{
+  "name": "i18n-ai",
+  "version": "1.0.0",
+  "description": "AI-powered i18n toolkit for TypeScript/Node.js/React projects. CLI for auto-extracting and translating keys via OpenAI.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "i18n-ai": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup src",
+    "test": "node --test"
+  },
+  "keywords": ["i18n", "internationalization", "translation", "openai", "typescript", "react", "cli"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_GITHUB/i18n-ai.git"
+  },
+  "dependencies": {
+    "openai": "^4.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+} 
